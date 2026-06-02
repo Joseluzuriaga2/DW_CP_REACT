@@ -64,7 +64,7 @@ const ContactForm = () => {
           gap: 'clamp(32px, 5vw, 64px)', alignItems: 'start',
         }} className="contact-grid">
 
-          {/* Info */}
+        
           <div>
             {[
               { label: 'Dirección', value: 'Av. Amazonas N35-17, Quito' },
@@ -87,7 +87,7 @@ const ContactForm = () => {
             </div>
           </div>
 
-          {/* Form */}
+          
           <div style={{
             background: 'rgba(16,32,64,0.5)', border: '1px solid rgba(59,130,246,0.15)',
             borderRadius: 12, padding: 'clamp(24px, 4vw, 40px)',
@@ -112,7 +112,7 @@ const ContactForm = () => {
             ) : (
               <form onSubmit={handleSubmit} noValidate style={{ display: 'flex', flexDirection: 'column', gap: 18 }}>
                 <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 16 }} className="form-row">
-                  {/* Nombre */}
+                  
                   <div>
                     <label style={labelStyle('nombre')}>Nombre completo</label>
                     <input name="nombre" value={form.nombre} onChange={handleChange}
@@ -121,7 +121,7 @@ const ContactForm = () => {
                       onBlur={e => e.target.style.borderColor = errors.nombre ? '#ef4444' : 'rgba(59,130,246,0.25)'} />
                     {errors.nombre && <p style={{ fontSize: 11, color: '#f87171', marginTop: 4 }}>{errors.nombre}</p>}
                   </div>
-                  {/* Email */}
+                
                   <div>
                     <label style={labelStyle('email')}>Correo electrónico</label>
                     <input name="email" type="email" value={form.email} onChange={handleChange}
@@ -133,7 +133,7 @@ const ContactForm = () => {
                 </div>
 
                 <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 16 }} className="form-row">
-                  {/* Teléfono */}
+                
                   <div>
                     <label style={labelStyle('telefono')}>Teléfono</label>
                     <input name="telefono" type="tel" value={form.telefono} onChange={handleChange}
@@ -142,7 +142,7 @@ const ContactForm = () => {
                       onBlur={e => e.target.style.borderColor = errors.telefono ? '#ef4444' : 'rgba(59,130,246,0.25)'} />
                     {errors.telefono && <p style={{ fontSize: 11, color: '#f87171', marginTop: 4 }}>{errors.telefono}</p>}
                   </div>
-                  {/* Modelo */}
+              
                   <div>
                     <label style={labelStyle('modelo')}>Modelo de interés</label>
                     <select name="modelo" value={form.modelo} onChange={handleChange}
@@ -157,7 +157,7 @@ const ContactForm = () => {
                   </div>
                 </div>
 
-                {/* Mensaje */}
+            
                 <div>
                   <label style={labelStyle('mensaje')}>Mensaje</label>
                   <textarea name="mensaje" value={form.mensaje} onChange={handleChange}

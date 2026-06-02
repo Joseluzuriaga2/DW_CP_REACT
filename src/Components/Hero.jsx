@@ -35,7 +35,7 @@ const Hero = () => (
         fontSize: 16, color: 'rgba(255,255,255,0.6)', lineHeight: 1.8,
         maxWidth: 500, margin: '0 auto 40px',
       }}>
-        Más de 200 vehículos disponibles. Financiamiento flexible, garantía extendida y atención personalizada.
+        Vehículos disponibles. Financiamiento flexible, garantía extendida y atención personalizada.
       </p>
 
       <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>

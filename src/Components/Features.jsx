@@ -13,7 +13,7 @@ const features = [
 
 const Features = () => (
   <>
-    {/* Models */}
+
     <section id="modelos" style={{
       padding: 'clamp(60px, 8vw, 100px) clamp(20px, 5vw, 80px)',
       background: '#0d1e38',
@@ -68,7 +68,7 @@ const Features = () => (
       </div>
     </section>
 
-    {/* Why us */}
+  
     <section id="nosotros" style={{
       padding: 'clamp(60px, 8vw, 100px) clamp(20px, 5vw, 80px)',
       background: '#0a1628',
